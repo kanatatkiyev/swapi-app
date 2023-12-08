@@ -5,6 +5,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "declaration": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -29,9 +30,10 @@
     },
     "typeRoots": [
         "./src/shared/types",
-        "./src/shared/api/types",
+        "./src/shared/api/types"
     ]
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["**/node_modules", "**/build"],
 }
