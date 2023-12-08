@@ -1,6 +1,6 @@
-# React | TypeScript | Vite | Feature Sliced Design
+# React | TypeScript | Vite | Feature Sliced Design (Please read info below)
 
-Please read it, Important information about project:
+Information about project:
 
 - Official Swapi API doesn't provide `page` query for `search` service, so I used another similar endpoint of Swapi - `https://swapi.py4e.com/api/`
 - Both Swapi API's don't provide `id` field for `routing request by id`, but there is `url` field, which contains needed value for request -> `people/${id}`
@@ -24,6 +24,7 @@ Layers:
 - /pages - page components with widgets
 
 Each layer is divided into business directions(slices) - characters(list) and character(separate view for character item)
-And each slice is didided into segments like ui, model, utils.
+
+And each slice is didided into segments like `ui`, `model`, `utils`.
 
 Thank you for attention, have a nice day :)
